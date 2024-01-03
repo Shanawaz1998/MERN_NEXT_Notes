@@ -1,0 +1,14 @@
+NEXT JS is a React framework for web which is developed by the vercel named company, used by companies like, UBER, Starbuck, github
+
+-> File Based Routing ()
+-> Best for the SEO ranking
+-> Server Side Rendering
+-> Built In Router
+-> SEO friendly
+
+The reason behind the NEXT JS is faster than react is Next js runs on the server side instead of running in the client side 
+
+There are 2 ways to create api in NEXT JS
+
+1- By creating it by using the file based approach
+2- By using the routes file and give all the command in that file

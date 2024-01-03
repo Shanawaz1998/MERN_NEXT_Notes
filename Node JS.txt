@@ -1,0 +1,51 @@
+Express js is mainly used for routing
+
+www.google.com -> Base URL
+www.google.com/search -> /search is the route
+
+-->Middleware;
+
+If we want to run some code before running the actual route, then we can use Middleware
+Syntax :-
+app.use((req, resp, next)={next()})
+Here next() calling is imp because it is used to call the PerformanceResourceTiming, if we dont use next(), then the route will not be called
+
+-->Dynamic Routing
+
+To make any route dynamic we need to use :"any variable" and to access that variable we need to take is from the req.params.variableName
+
+-->Template Engine
+
+EJS - EJS is html with superpower, it is used to render html inside server (e.g., pug, ejs, jade, handlebars)
+EJS is very similar to HTML 
+PUG and jade is very similar to python
+
+Steps
+1) install ejs - npm i ejs
+
+2) configure ejs - app.set("view engine","ejs")
+
+3) Make one folder with the name - views
+
+4) make one file with .ejs extension
+
+5) As till now we were using send() in the get funct just replace that send to render and only the filename inside the arg of render() funct. 
+
+Note: TO send the data from the server file to the view(HTML), then we can send it as :- app.send("index", {name: "Shanawaz"})
+To access the name in the html page :- <%= name %>
+
+--> Express Static files setup
+
+We have to create a folder 
+To setup static files we have to use -> app.use(express.static('./public))
+
+--> Express Generator
+
+It is used to make the express project(Folder), which reduces the process to do it manually
+
+Steps 
+1) Need to install express-Generator globally in the system by using the command :- npm i express-generator -g
+2) Create new app by using the command :- express appName --view=ejs
+
+
+
