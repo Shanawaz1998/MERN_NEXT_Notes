@@ -8,7 +8,41 @@ NEXT JS is a React framework for web which is developed by the vercel named comp
 
 The reason behind the NEXT JS is faster than react is Next js runs on the server side instead of running in the client side 
 
+Note:- SSR have one drawback that it cannot execute any Events(onClick(), onSubmit()...) and hooks(useEffect(), useState()...)
+
+Q) How to check whether the component is Client side or Server Side
+Ans) Do one console.log before the return and if the output is printed on the VS code terminal then it is Server side and if it is printed on the browser's console(Inspect) then it is client side
+
 There are 2 ways to create api in NEXT JS
 
 1- By creating it by using the file based approach
 2- By using the routes file and give all the command in that file
+
+
+Learn the project structure by the link :- https://nextjs.org/docs/getting-started/project-structure
+There are some keywords to create the file name :-
+1- layout - To keep the fix layout on the page
+2- page -  to write the js in the file
+3- loading -  To render the loading, symbol or text
+4- error - To render the error page on the occurence of the error
+5- route - To create the endpoint of the api
+6- template 
+7- default
+8- not-found
+9- global-error
+
+
+---> NextRequest and NextResponse Object 
+
+NextRequest :- This is used to get the object from the requested url Which is passed as parameter in the GET(req: NextRequest(Data Type)), POST(), PUT(), DELETE()
+NextResponse :- This is used to send the object from the requested url
+
+----> How to make the link between the 2 tables
+
+For example
+
+If we have 2 tables named as User and task - as both the table must be having there unique userId and taskId
+
+To make a link between them we need to add there unique Id in there table as each user should have the taskId from where we can get the tasks of that particular user and each task should have there particular userId to get to know each task belongs to which user
+
+
